@@ -59,10 +59,12 @@ function inputPress(event){
         for(var i = 0; i < digits; i++) randomtext += Math.floor(Math.random() * 10);
 
         document.getElementById("showtext").innerHTML = randomtext;
-
+        document.getElementById("textinput").disabled = true;
+        
         setTimeout(() => {
 
           document.getElementById("showtext").innerHTML = "...";
+          document.getElementById("textinput").disabled = false;
 
         }, flashtime)
 
