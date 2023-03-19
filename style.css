@@ -1,0 +1,77 @@
+body{
+  background: black;
+}
+#showtext{
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
+#textinput{
+  display: block;
+  width: 400px;
+  font-size: 50px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+#content{
+
+  position: relative;
+  top: 50px;
+
+}
+
+#contentparent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 90vh;
+}
+
+#tutorial{
+  color: white;
+  font-size: 30px;
+  opacity: 0.5;
+  margin-top: 100px;
+  font-family: arial;
+
+}
+
+
+#sliders{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+  width: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textslider{
+  margin-bottom: 8px;
+  display: flex;
+  height: 30px;
+  opacity: 0.7;
+  transition: all 0.1s;
+}
+
+.textslider:hover{
+  opacity: 1;
+  transition: all 0.1s;
+}
+
+.textslider > p{
+  font-size: 30px;
+  color: white;
+  position: relative;
+  bottom: 30px;
+}
+
+.slider{
+  margin-left: 20px;
+  font-size: 30px;
+  width: 100px;
+}

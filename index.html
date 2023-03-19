@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Working Memory Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.75" />
+	  <link rel="icon" href="eye_icon.png">
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+  </head>
+  <body onload="bodyload()">
+
+      <div id = "contentparent">
+        <div id ="content">
+          <p id = "showtext">0</p>
+          <div id = "inputcontainer">
+            <input id = "textinput" type="text" onkeypress="inputPress(event)"></input>
+          </div>
+
+          <div id ="sliders">
+
+            <div class="textslider">
+              <p>Digits:</p>
+              <input class = "slider" type="number" id="digits" name="quantity" min="0" value="6" onchange="setstuff()">
+            </div>
+
+            <div class="textslider">
+              <p>Flash time:</p>
+              <input class = "slider" type="number" id="flashtime" name="quantity" min="0" value="100" onchange="setstuff()">
+            </div>
+
+            <div class="textslider">
+              <p>Rest time:</p>
+              <input class = "slider" type="number" id="resttime" name="quantity" min="0" value="3000" onchange="setstuff()">
+            </div>
+
+          </div>
+          <p id="tutorial">How to play? Just type the number you see and press enter.</p>
+        </div>
+
+      </div>
+
+
+  </body>
+</html>
